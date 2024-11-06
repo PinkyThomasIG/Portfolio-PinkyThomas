@@ -65,13 +65,15 @@
         <h2>Contact me</h2>
         <form action="contact-form" method="post">
             <label for="Name">Name</label>
-            <input type="user_name">
+            <input type="user_name" required>
             <p>
                 <label for="Email">Email</label>
-                <input type="user_email">
+                <input type="user_email" required>
             </p>
+            <label for="Telephone">Telephone</label>
+            <input type="Telephone" pattern="[\+]\d{2}[\-]\d{4}[\-]\d{7}" required>
             <label for="Message">Message</label>
-            <textarea name="Message" id="user_message"></textarea>
+            <textarea maxlength="240" name="Message" id="user_message" required></textarea>
             <button type="submit" class="button">send message </button>
         </form>
     </div>
