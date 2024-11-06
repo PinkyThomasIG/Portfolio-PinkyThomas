@@ -1,0 +1,193 @@
+/* colors used
+background color: #f5f5dc
+table color: #1900ff
+link color: #4b0082
+link hover color: darkgreen
+link active color: crimson
+link visited color:  #0000ff
+Greet font color: #d2691e
+contact font color: #d2691e
+button background color (contact): #357b70
+button background color (CV): :#a9a9a9
+button background color botton (cv): #808080
+grid background color: #d3d3d3
+keyframes Sun changing color from: #edc655
+keyframes Sun changing color to: #f76414
+*/
+:root{
+    --background-color: #f5f5dc;
+    --table-color: #1900ff;
+    --Link-color: #4b0082;
+    --link-color-hover: #006400;
+    --link-color-active:#dc143c;
+    --link-color-visited: #0000ff;
+    --greetfont-home-color: #d2691e;
+    --contactfont-color: #d2691e;
+    --bg-colorbutton-contact: #357b70;
+    --button-font-color: #ffffff;
+    --bg-colorbutton-CV: #a9a9a9;
+    --bg-colorbuttonbottom-CV: #808080;
+    --grid_bg: #d3d3d3;
+    --Suncolor-from: #edc655;
+    --suncolor-to: #f76414
+}
+body{
+    font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--background-color);
+  padding: 20px;
+  margin: 20px;
+  border: solid black; 
+}
+.table_item{
+    color: var(--table-color);
+}
+a{
+    color: var(--Link-color);
+} 
+a:hover{
+    color: var(--link-color-hover);
+}
+a:active{
+    color: var(--link-color-active);
+}
+a:visited{
+    color: var(--link-color-visited);
+}
+.greet{
+    color: var(--greetfont-home-color);
+}
+.contact{
+    color: var(--contactfont-color);
+}
+.logo{
+    border-radius: 50%;
+    position: relative;
+}
+.button{
+    font-family: inherit;
+    background-color:var(--bg-colorbutton-contact);
+    color: var(--button-font-color);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10%;
+}
+button:hover, button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.portrait{
+    float: left;
+    border-radius: 50%;
+    width: 250px;
+    margin-right: 40px;
+   
+}
+.page-footer{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.profile{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid_item {
+    background-color: var(--grid_bg);
+    padding: 20px;
+  }
+  .grid_item:last-child {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-start: 2;
+  }
+  .navigation-list_item {
+    text-decoration: underline;
+  }
+  .navigation-list_item--active {
+    text-decoration: none;
+  }
+  @media all and (max-width:500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width:500px) and (max-width:750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width:750px){
+    .grid{
+        grid-gap:10px;
+    }
+  }
+  .grid_item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .button_cv {
+    background-color:var(--bg-colorbutton-CV);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: solid var(--bg-colorbuttonbottom-CV);
+  }
+  @keyframes color-change {
+    from {
+        fill: var(--Suncolor-from);
+    }
+    to {
+        fill: var(--suncolor-to);
+    }
+  }
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  @keyframes cloud-move {
+    from{
+        transform: translate(0,50px);
+    }
+    to {
+        transform: translate(200px, 50px);
+    }
+  }
+  .cloud-front{
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+    animation-timing-function: linear;
+  }
+  @keyframes cloud-move-reverse{
+    from{
+        transform: translate(446px, 48px);
+    }
+    to {
+        transform:translate(200px,48px);
+    }
+  }
+  .cloud-back {
+    animation-duration: 34s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }

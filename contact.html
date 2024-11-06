@@ -1,0 +1,81 @@
+<!--Task 3
+setting up the contact page and adding svg icons-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Me</title>
+    <link rel="short icon" href="./img/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.production.css">
+</head>
+<body>
+    <header class="page-header">
+        <img src="./img/logo.jpg" height="150" width="150" class="logo" alt="This is a logo">
+        <nav class="main navigation-list page-header_item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+                </li>
+            </ul>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
+                </li>
+            </ul>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+                </li>  
+            </ul>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Contact</a>
+                </li>
+            </ul>        
+        </nav>
+    </header>
+    <h1 class="contact">GET IN TOUCH</h1>
+    <img src="./img/location.png" height="40" width="40" alt="This a picture showing location">
+    <h3>Address</h3>
+    Pinky Thomas
+    <p>Memeler Str 56</p>
+    68307, Mannheim
+    <p>
+        <img src="./img/phone-icon.png" height="40" width="40" alt="This is a picture of phone">
+    </p>  
+        <p>
+            <a href="tel:4915168456325">Tel: +49 1516 8456325</a>
+        </p>
+    <img src="./img/Email_icon.png" height="50" width="50" alt="This is picture of Email">
+    <p>
+        <a href="mailto:pinkymukalal@gmail.com">Email: pinkymukalal@gmail.com</a>
+    </p>
+    <div>
+        <h2>Contact me</h2>
+        <form action="contact-form" method="post">
+            <label for="Name">Name</label>
+            <input type="user_name">
+            <p>
+            <label for="Email">Email</label>
+            <input type="user_email">
+            </p>
+            <label for="Message">Message</label>
+            <textarea name="Message" id="user_message"></textarea>
+            <button type="submit" class="button">send message </button>
+        </form>
+    </div>
+    <footer class="page-footer">
+        Find me on
+        <div class="social media">
+            <a href="#"> <img src="./img/svg imgs/GitHub.svg" width="40" height="40" alt="Githublogo"> </a>
+            <a href="#"> <img src="./img/svg imgs/linkdin.svg" width="40" height="40" alt="Linkdin logo"></a>
+            <a href="#"> <img src="./img/svg imgs/twitter.svg" width="40" height="40" alt="Twitter logo"></a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+    </body>
+    </html>
