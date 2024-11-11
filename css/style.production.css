@@ -30,6 +30,11 @@ body{
   margin: 20px;
   border: solid black; 
 }
+.table {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 .table_item{
     color: #1900ff;
 }
@@ -46,9 +51,6 @@ a:visited{
     color: #0000ff;
 }
 .greet{
-    color: #d2691e;
-}
-.contact{
     color: #d2691e;
 }
 .logo{
@@ -147,6 +149,12 @@ button:hover, button:focus {
     border-radius: 10px;
     border-bottom: solid #808080;
   }
+  .content {
+    text-align: center;
+  }
+  .content-item {
+    list-style-position: inside;
+  }
   @-webkit-keyframes color-change {
     from {
         fill: #edc655;
@@ -238,4 +246,10 @@ button:hover, button:focus {
             animation-direction: alternate;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+  }
+  .main-navigation page-header_item ul{
+    list-style: none;
+    background-color: #d2691e;
+    padding: 0;
+    margin: 0;
   }
