@@ -261,12 +261,16 @@ button:hover, button:focus {
   }
   .navigation-list a:hover{
     background-color: #a9a9a9;
+    transform: scale(1.2);
   }
   .navigation-list li {
   list-style-type: none;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
   }
   .navigation-list_item {
-    text-decoration: underline;
+    text-decoration: none;
   }
   .navigation-list_item--active {
     text-decoration: none;
