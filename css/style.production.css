@@ -110,12 +110,6 @@ button:hover, button:focus {
         grid-row-start: 1;
     grid-row-start: 2;
   }
-  .navigation-list_item {
-    text-decoration: underline;
-  }
-  .navigation-list_item--active {
-    text-decoration: none;
-  }
   @media all and (max-width:500px) {
     .grid {
         -ms-grid-columns: 1fr;
@@ -260,11 +254,22 @@ button:hover, button:focus {
     text-align: right;
   }
   .navigation-list {
-    list-style-position: inside;
+    background-color: #808080;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .navigation-list a:hover{
+    background-color: #a9a9a9;
   }
   .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  list-style-type: none;
+  }
+  .navigation-list_item {
+    text-decoration: underline;
+  }
+  .navigation-list_item--active {
+    text-decoration: none;
   }
   .center {
     text-align: center;
