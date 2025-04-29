@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work</title>
+    <link rel="short icon" href="./img/favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="./img/logo.jpg"
+        height="150"
+        width="150"
+        class="logo"
+        alt="This is a logo"
+      />
+      <nav class="main-navigation page-header_item">
+        <a href="index.html" role="menuitem" class="navigation-list_item"
+          >Home</a
+        >
+        <a href="about.html" role="menuitem" class="navigation-list_item"
+          >About</a
+        >
+        <a
+          href="work.html"
+          role="menuitem"
+          class="navigation-list_item navigation-list_item--active"
+          >Work</a
+        >
+        <a href="contact.html" role="menuitem" class="navigation-list_item"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <!--main grid content here-->
+
+    <main>
+      <h1>Meet App Project</h1>
+      <p>
+        The Meet App is a modern web application designed to help users discover
+        and explore events in different cities. By leveraging the power of
+        serverless architecture and Progressive Web Apps (PWAs), the Meet App
+        delivers a seamless, fast, and cross-platform experience.
+      </p>
+
+      <h2 class="section-title">Project Objective</h2>
+      <p>
+        The goal of the Meet App is to make event discovery simple and
+        accessible anytime, anywhere. Built with a Test-Driven Development (TDD)
+        approach, the app offers features like:
+      </p>
+      <ul>
+        <li>Search for events by city</li>
+        <li>View event details & manage how many events are displayed</li>
+        <li>
+          Offline functionality - access cached events without an internet
+          connection
+        </li>
+        <li>Add the app to your home screen for quick access</li>
+        <li>Interactive charts to visualize event trends by city & category</li>
+      </ul>
+
+      <h2 class="section-title">Technologies Used</h2>
+      <ul>
+        <li><strong>React</strong> - A fast, responsive front-end framework</li>
+        <li>
+          <strong>AWS Lambda</strong> - A serverless backend for handling data
+          requests
+        </li>
+        <li>
+          <strong>Google Calendar API</strong> - Fetching real-time event data
+        </li>
+        <li>
+          <strong>Jest & Cucumber</strong> - Ensuring quality through rigorous
+          testing
+        </li>
+        <li><strong>OAuth2</strong> - Secure authentication</li>
+        <li><strong>Recharts</strong> - For data visualizations</li>
+        <li><strong>Service Workers</strong> - Enabling offline access</li>
+        <li><strong>Vercel</strong> - For deployment</li>
+      </ul>
+
+      <!-- Button container for both buttons -->
+      <div class="button-container">
+        <a
+          href="https://github.com/PinkyThomasIG/meet"
+          class="button"
+          target="_blank"
+          >View on GitHub</a
+        >
+        <a href="#" class="button" target="_blank">Live Website</a>
+      </div>
+    </main>
+  </body>
+</html>
